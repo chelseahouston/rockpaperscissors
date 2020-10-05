@@ -1,4 +1,4 @@
-# ROCK PAPER SCIRROS GAME ---
+# ROCK PAPER SCISSORS GAME ---
 def main():
   # NAME INPUT ---
   player1 = input("Player 1, what is your name? ")
@@ -34,12 +34,13 @@ def main():
       runagain()
 
 # RUN AGAIN?
-  def runagain():
-      run = input("Run again? (Y/N) ").upper()
-      if run == "Y":
-        main()
-        runagain()
-      if run == "N":
-        print("Thank you for playing!")
-  runagain()
+def runagain():
+    run = input("Run again? (Y/N) ").upper()
+    if run == "Y":
+      main()
+      runagain()
+    if run == "N":
+      print("Thank you for playing!")
+
 main()
+runagain()
